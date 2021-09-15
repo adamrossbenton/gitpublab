@@ -9,7 +9,9 @@
         <ul>
             <% for (let i = 0; i < allDrinks.length; i++) { %>
                 <li>
-                    <%=allDrinks[i].name[0].toUpperCase()+allDrinks[i].name.slice(1) %>
+                    <a href="/drinks/<%=i%>">
+                        <%=allDrinks[i].name[0].toUpperCase()+allDrinks[i].name.slice(1) %>
+                    </a>
                 </li>
             <% } %>
         </ul>
