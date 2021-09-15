@@ -5,7 +5,7 @@ const port = 3000
 const drinks = require("./models/drinks")
 
 app.get("/drinks",(req,res) => {
-    res.send(drinks)
+    res.render("drinksindex.ejs", {allDrinks: drinks})
 })
 
 app.listen(port, () => {
