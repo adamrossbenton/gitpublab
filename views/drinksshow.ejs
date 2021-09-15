@@ -2,9 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Drinks Menu</title>
+        <title>At foo bar</title>
     </head>
     <body>
-        <!-- <h1><%=drink.name</h1> -->
+        <h1><%= drink.name.toUpperCase()%></h1>
+        <h2><%= drink.price%></h2>
+        <img src="<%=drink.image%>"><br />
+        <a href="/drinks">Back to Menu</a>
     </body>
 </html>
