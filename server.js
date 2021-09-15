@@ -15,6 +15,17 @@ app.get('/',(req,res) => {
         body {
             color: blanchedalmond;
             background-color: steelblue;
+            font-family: "Lucida Console", monospace;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
         }
         </style>
     `)
