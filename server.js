@@ -11,6 +11,12 @@ app.get('/',(req,res) => {
         <h1>Welcome to gitPub!</h1>
         <a href="./food">FOOD</a><br />
         <a href="./drinks">DRINKS</a>
+        <style type="text/css">
+        body {
+            color: blanchedalmond;
+            background-color: steelblue;
+        }
+        </style>
     `)
 })
 
@@ -33,5 +39,4 @@ app.get("/drinks/:id",(req,res) => {
 
 app.listen(port, () => {
     console.log(`Welcome to the Gitpub App!`)
-    console.log(food)
 })
