@@ -19,12 +19,12 @@ app.get("/food",(req,res) => {
     res.render("foodindex.ejs", {allFood: food})
 })
 
-app.get("/drinks/:id",(req,res) => {
-    res.render("foodshow.ejs",{fooditem: food[req.params.id]})
-})
-
 app.get("/drinks",(req,res) => {
     res.render("drinksindex.ejs", {allDrinks: drinks})
+})
+
+app.get("/food/:id",(req,res) => {
+    res.render("foodshow.ejs",{fooditem: food[req.params.id]})
 })
 
 app.get("/drinks/:id",(req,res) => {
@@ -33,4 +33,5 @@ app.get("/drinks/:id",(req,res) => {
 
 app.listen(port, () => {
     console.log(`Welcome to the Gitpub App!`)
+    console.log(food)
 })
