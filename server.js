@@ -2,6 +2,7 @@ const express = require("express")
 const app = express()
 const port = 3000
 
+const food = require("./models/food")
 const drinks = require("./models/drinks")
 
 // index
